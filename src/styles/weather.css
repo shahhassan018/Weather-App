@@ -1,0 +1,69 @@
+:root {
+    --section-overlay: rgba(0, 0, 0, 0.7);
+    --background-overlay: rgba(0, 0, 0, 0.2)
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-overlay);
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+
+.section {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    color: white;
+}
+
+.section__inputs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--section-overlay);
+}
+
+.section__temperature{
+    background-color: var(--section-overlay);
+}
+
+.temperature {
+    width: 50%;
+}
+
+.section__temperature button {
+    padding: 20px;
+    width: 50%;
+    margin: 40px 75px;
+}
+
+.section__temperature p {
+    line-height: 1;
+}
+
+.todayweather{
+    display: flex;
+}
+
+.section__inputs>input {
+    border: 0.8px solid white;
+    border-radius: 0.4rem;
+    background-color: transparent;
+    color: white;
+    padding: 0.5rem;
+    font-size: 20px;
+    font-weight: 200;
+}
